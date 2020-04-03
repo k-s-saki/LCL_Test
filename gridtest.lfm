@@ -1,0 +1,109 @@
+object FrmGrid: TFrmGrid
+  Left = 914
+  Height = 483
+  Top = 425
+  Width = 635
+  Caption = 'FrmGrid'
+  ClientHeight = 483
+  ClientWidth = 635
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.0.4.0'
+  object mmDebug: TMemo
+    Left = 32
+    Height = 90
+    Top = 360
+    Width = 150
+    Lines.Strings = (
+      'mmDebug'
+    )
+    TabOrder = 0
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 322
+    Width = 635
+    Align = alTop
+    ResizeAnchor = akTop
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 322
+    Top = 0
+    Width = 635
+    Align = alTop
+    Caption = 'Panel1'
+    ClientHeight = 322
+    ClientWidth = 635
+    TabOrder = 2
+    object SG: TStringGrid
+      Left = 176
+      Height = 320
+      Top = 1
+      Width = 458
+      Align = alClient
+      Columns = <      
+        item
+          Title.Caption = '日本語入力'
+          Width = 100
+        end      
+        item
+          PickList.Strings = (
+            's1'
+            's2'
+            's3'
+            's4'
+            's5'
+            's6'
+            's7'
+          )
+          Title.Caption = '数値入力'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'ReadOnly ! '
+        end      
+        item
+          ButtonStyle = cbsCheckboxColumn
+          Title.Caption = 'CheckBox'
+        end>
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goRowSizing, goColSizing, goRowMoving, goColMoving, goEditing, goAutoAddRows, goTabs, goRowSelect, goAlwaysShowEditor, goThumbTracking, goColSpanning, goRelaxedRowSelect, goDblClickAutoSize, goSmoothScroll, goFixedRowNumbering, goScrollKeepVisible, goHeaderHotTracking, goHeaderPushedLook, goSelectionActive, goFixedColSizing, goDontScrollPartCell, goCellHints, goTruncCellHints, goCellEllipsis, goAutoAddRowsSkipContentCheck, goRowHighlight]
+      TabOrder = 0
+      OnPickListSelect = SGPickListSelect
+      OnSelectEditor = SGSelectEditor
+      OnSelection = SGSelection
+      OnSelectCell = SGSelectCell
+      OnSetCheckboxState = SGSetCheckboxState
+      OnSetEditText = SGSetEditText
+      OnTopLeftChanged = SGTopLeftChanged
+      OnUTF8KeyPress = SGUTF8KeyPress
+    end
+    object pnlOption: TPanel
+      Left = 1
+      Height = 320
+      Top = 1
+      Width = 170
+      Align = alLeft
+      ClientHeight = 320
+      ClientWidth = 170
+      TabOrder = 1
+      object goFixedVertLine: TCheckBox
+        Left = 24
+        Height = 19
+        Top = 24
+        Width = 105
+        Caption = 'goFixedVertLine'
+        OnChange = cbxOptionChange
+        TabOrder = 0
+      end
+    end
+    object Splitter2: TSplitter
+      Left = 171
+      Height = 320
+      Top = 1
+      Width = 5
+    end
+  end
+end
