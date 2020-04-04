@@ -26,12 +26,21 @@
       <FormatVersion Value="2"/>
       <Modes Count="0"/>
     </RunParams>
-    <RequiredPackages Count="1">
+    <RequiredPackages Count="4">
       <Item1>
-        <PackageName Value="LCL"/>
+        <PackageName Value="SynEdit"/>
       </Item1>
+      <Item2>
+        <PackageName Value="LazControls"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
     </RequiredPackages>
-    <Units Count="2">
+    <Units Count="6">
       <Unit0>
         <Filename Value="LCL_Test.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -40,9 +49,36 @@
         <Filename Value="gridtest.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmGrid"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="GridTest"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="firebirdtest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDB"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmMain"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="dbformtest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDbForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="DbFormTest"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="printtest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrint"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -53,6 +89,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="$(LazarusDir)\components\fpvectorial"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

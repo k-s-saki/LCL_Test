@@ -1,0 +1,344 @@
+object FrmDB: TFrmDB
+  Left = 354
+  Height = 453
+  Top = 98
+  Width = 776
+  Caption = 'FrmDB'
+  ClientHeight = 453
+  ClientWidth = 776
+  Font.Height = 14
+  Font.Name = 'ＭＳ ゴシック'
+  LCLVersion = '2.0.4.0'
+  object DBGrid1: TDBGrid
+    Left = 72
+    Height = 192
+    Top = 232
+    Width = 680
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Height = 14
+    TitleFont.Name = 'ＭＳ ゴシック'
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'KJCODE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'KJID'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'NAMAE'
+        DataType = ftString
+        Precision = -1
+        Size = 48
+      end    
+      item
+        Name = 'KANAMEI'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'BUSYO'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'YAKUSYOKU'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'KEISYOU'
+        DataType = ftString
+        Precision = -1
+        Size = 16
+      end    
+      item
+        Name = 'EMAIL'
+        DataType = ftString
+        Precision = -1
+        Size = 256
+      end    
+      item
+        Name = 'ATE_TEL'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'VLOGINTYPE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'SYOZOKU_REFTYPE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'SYOZOKU_REFCODE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'LOCK_UPDATENO'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'LOCK_DT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'LOCK_PCID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'LOCK_USERID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'LOGINPASS'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'LOGINTYPE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'LASTLOGINDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'LASTLOGINPCID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ATE_ASID'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'ATE_NAMAE'
+        DataType = ftString
+        Precision = -1
+        Size = 72
+      end    
+      item
+        Name = 'ATE_KEISYOU'
+        DataType = ftString
+        Precision = -1
+        Size = 16
+      end    
+      item
+        Name = 'ATE_NAMAE2'
+        DataType = ftString
+        Precision = -1
+        Size = 48
+      end    
+      item
+        Name = 'ATE_YUUBIN'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'ATE_JYUUSYO1'
+        DataType = ftString
+        Precision = -1
+        Size = 48
+      end    
+      item
+        Name = 'ATE_JYUUSYO2'
+        DataType = ftString
+        Precision = -1
+        Size = 48
+      end    
+      item
+        Name = 'ATE_JYUUSYO3'
+        DataType = ftString
+        Precision = -1
+        Size = 48
+      end    
+      item
+        Name = 'ATE_FAX'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'ATE_TANTOUMEI'
+        DataType = ftString
+        Precision = -1
+        Size = 48
+      end    
+      item
+        Name = 'ATE_KJCODE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'SEIBETU'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'SEINENGAPPI'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'BLOOD'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'KEITAITEL'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'RENRAKU'
+        DataType = ftString
+        Precision = -1
+        Size = 400
+      end    
+      item
+        Name = 'KOYOUDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'TAISYOKUDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'TAISYOKURIYUU'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'KENHOKANYUUDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'KENHOKIGOU'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'KOUNENKANYUUDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'KOUNENKIGOU'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'KOYOUHOKANYUUDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'KOYOUHOKIGOU'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'ROUSAIKANYUUDT'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'ROUSAIKIGOU'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'TUUKINTIME'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'MEMOTXT'
+        DataType = ftBlob
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'PHOTOIMAGE'
+        DataType = ftBlob
+        Precision = -1
+        Size = 8
+      end>
+    Active = True
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM MST_KOJIN'
+    )
+    RefreshSQL.Strings = (
+      ''
+    )
+    Params = <>
+    left = 176
+    top = 104
+  end
+  object IBConnection1: TIBConnection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'P:\Current\FDB\TEST\TEST.FB25.UTF8.FDB'
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = SQLTransaction1
+    UserName = 'SYSDBA'
+    HostName = '172.17.5.100'
+    CheckTransactionParams = False
+    left = 176
+    top = 32
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = IBConnection1
+    left = 264
+    top = 104
+  end
+  object DataSource1: TDataSource
+    AutoEdit = False
+    DataSet = SQLQuery1
+    left = 176
+    top = 176
+  end
+end

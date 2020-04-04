@@ -1,7 +1,7 @@
 object FrmGrid: TFrmGrid
-  Left = 914
+  Left = 213
   Height = 483
-  Top = 425
+  Top = 531
   Width = 635
   Caption = 'FrmGrid'
   ClientHeight = 483

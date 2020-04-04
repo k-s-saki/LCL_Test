@@ -1,0 +1,46 @@
+object FrmMain: TFrmMain
+  Left = 615
+  Height = 240
+  Top = 253
+  Width = 320
+  Caption = 'FrmMain'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.4.0'
+  object BtnGrid: TButton
+    Left = 16
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'グリッド'
+    OnClick = BtnGridClick
+    TabOrder = 0
+  end
+  object BtnDB1: TButton
+    Left = 16
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'DB(LCL)'
+    OnClick = BtnDB1Click
+    TabOrder = 1
+  end
+  object BtnDbForm: TButton
+    Left = 16
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'DBForm'
+    OnClick = BtnDbFormClick
+    TabOrder = 2
+  end
+  object BtnPrint: TButton
+    Left = 16
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Print'
+    OnClick = BtnPrintClick
+    TabOrder = 3
+  end
+end
