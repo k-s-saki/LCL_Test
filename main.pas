@@ -16,9 +16,11 @@ type
     BtnPrint: TButton;
     BtnGrid: TButton;
     BtnDB1: TButton;
+    BtnPrint2: TButton;
     procedure BtnDB1Click(Sender: TObject);
     procedure BtnDbFormClick(Sender: TObject);
     procedure BtnGridClick(Sender: TObject);
+    procedure BtnPrint2Click(Sender: TObject);
     procedure BtnPrintClick(Sender: TObject);
   private
 
@@ -31,7 +33,7 @@ var
 
 implementation
 
-uses GridTest, DbFormTest, FirebirdTest,PrintTest;
+uses GridTest, DbFormTest, FirebirdTest,PrintTest,PrintTest2;
 
 {$R *.lfm}
 
@@ -56,6 +58,13 @@ begin
   FrmGrid:=TFrmGrid.Create(nil);
   FrmGrid.ShowModal;
   FreeAndNil(FrmGrid);
+end;
+
+procedure TFrmMain.BtnPrint2Click(Sender: TObject);
+begin
+  FrmPrint2:=TFrmPrint2.Create(nil);
+  FrmPrint2.ShowModal;
+  FreeAndNil(FrmPrint2);
 end;
 
 procedure TFrmMain.BtnPrintClick(Sender: TObject);

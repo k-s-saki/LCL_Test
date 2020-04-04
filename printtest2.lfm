@@ -1,0 +1,47 @@
+object FrmPrint2: TFrmPrint2
+  Left = 854
+  Height = 476
+  Top = 343
+  Width = 621
+  Caption = 'FrmPrint2'
+  ClientHeight = 476
+  ClientWidth = 621
+  LCLVersion = '2.0.4.0'
+  object BtnFpPDF: TButton
+    Left = 24
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'FpPDF'
+    OnClick = BtnFpPDFClick
+    TabOrder = 0
+  end
+  object BtnCanvasPreview: TButton
+    Left = 24
+    Height = 25
+    Top = 96
+    Width = 107
+    Caption = 'Preview'
+    OnClick = BtnCanvasPreviewClick
+    TabOrder = 1
+  end
+  object BtnCanvasPrint: TButton
+    Left = 24
+    Height = 25
+    Top = 124
+    Width = 107
+    Caption = 'Print'
+    OnClick = BtnCanvasPrintClick
+    TabOrder = 2
+  end
+  object PbxPage: TPaintBox
+    Left = 152
+    Height = 441
+    Top = 16
+    Width = 457
+  end
+  object PrintDialog1: TPrintDialog
+    left = 32
+    top = 168
+  end
+end

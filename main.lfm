@@ -43,4 +43,13 @@ object FrmMain: TFrmMain
     OnClick = BtnPrintClick
     TabOrder = 3
   end
+  object BtnPrint2: TButton
+    Left = 16
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'Print2'
+    OnClick = BtnPrint2Click
+    TabOrder = 4
+  end
 end
